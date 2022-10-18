@@ -20,19 +20,7 @@ function App() {
 
   }
 
-  useEffect(() => {
-    localStorage.setItem('tasks2', JSON.stringify(tasks));
-    console.log('SETITEM')
 
-  }, [tasks]);
-
-  useEffect(() => {
-    const tasks2 = JSON.parse(localStorage.getItem('tasks2'));
-    if (tasks2) {
-     setTasks(tasks2);
-    }
-    console.log('GETITEM')
-  }, []);
 
   //delete task
   const deleteTask =(id) => {
@@ -61,3 +49,32 @@ function App() {
 }
 
 export default App;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  // useEffect(() => {
+  //   localStorage.setItem('tasks2', JSON.stringify(tasks));
+  //   console.log('SETITEM')
+
+  // }, [tasks]);
+
+  // useEffect(() => {
+  //   const tasks2 = JSON.parse(localStorage.getItem('tasks2'));
+  //   if (tasks2) {
+  //    setTasks(tasks2);
+  //   }
+  //   console.log('GETITEM')
+  // }, []);
